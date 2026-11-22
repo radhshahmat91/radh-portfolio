@@ -1,4 +1,4 @@
-# Radh Shahmat - Portfolio
+Radh Shahmat - Portfolio : https://radhshahmat91.github.io/radh-portfolio
 
 Static site: open `index.html`, or upload the folder to GitHub Pages / Vercel / Netlify (no build step).
 
