@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Radh Shahmat | Full-Stack Developer &amp; NLP Researcher</title>
+<meta name="description" content="Portfolio of Radh Shahmat: full-stack web projects and NLP research on gender bias in Bangladeshi YouTube comments.">
+<meta name="theme-color" content="#07080d">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Unbounded:wght@500;800&display=swap" rel="stylesheet">
+<script>
+/* intro gating (runs before first paint): ?intro=0 skips it, reduced-motion visitors never see it */
+(function (d) {
+  var r = d.documentElement; r.classList.add('js');
+  var skip = /[?&]intro=0/.test(location.search) || (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  if (!skip) r.classList.add('intro-lock', 'has-intro'); else r.classList.add('no-intro');
+  if (location.protocol !== 'file:') { var l = d.createElement('link'); l.rel = 'preload'; l.as = 'font'; l.type = 'font/woff'; l.crossOrigin = ''; l.href = 'assets/fonts/Anton-Regular.woff'; d.head.appendChild(l); }
+})(document);
+</script>
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="assets/css/projects.css">
+<link rel="stylesheet" href="assets/css/intro.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.5 7.5 8.5 6 8.5-6"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 20h14"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.2v13.6a.6.6 0 0 0 .92.5l10.6-6.8a.6.6 0 0 0 0-1L8.92 4.7a.6.6 0 0 0-.92.5z"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24"><rect x="6" y="5" width="4.2" height="14" rx="1"/><rect x="13.8" y="5" width="4.2" height="14" rx="1"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-volume" viewBox="0 0 24 24"><path d="M4 9.5v5h3.5L12 18.5v-13L7.5 9.5zM15.5 9a4.2 4.2 0 0 1 0 6M18 6.5a8 8 0 0 1 0 11"/></symbol>
+  <symbol id="i-mute" viewBox="0 0 24 24"><path d="M4 9.5v5h3.5L12 18.5v-13L7.5 9.5zM16 9.5l5 5M21 9.5l-5 5"/></symbol>
+  <symbol id="i-full" viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24"><path d="M21 3 10.5 13.5M21 3l-6.5 18-4-8.5L2 8.5z"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 5v14m0 0-5-5m5 5 5-5"/></symbol>
+  <symbol id="i-prev" viewBox="0 0 24 24"><path d="m14.5 6-6 6 6 6"/></symbol>
+  <symbol id="i-next" viewBox="0 0 24 24"><path d="m9.5 6 6 6-6 6"/></symbol>
+</svg>
+
+<div id="intro" class="intro" aria-hidden="true">
+  <div class="intro__bg"><i class="intro__bokeh b1"></i><i class="intro__bokeh b2"></i><i class="intro__bokeh b3"></i><i class="intro__bokeh b4"></i></div>
+  <canvas class="intro__canvas"></canvas>
+  <p class="intro__tag">Curiosity in. Craft out.</p>
+  <span class="intro__pct">000</span>
+  <button class="intro__skip" type="button">Skip intro</button>
+  <p class="intro__fallback">RADH SHAHMAT</p>
+</div>
+<div id="bar"></div><div id="glow"></div><canvas id="bg"></canvas>
+
+<header id="nav">
+  <a class="logo" href="#top">RS<i>.</i></a>
+  <nav id="menu"><a href="#about">About</a><a href="#work">Projects</a><a href="#research">Research</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
+  <div class="nr"><div class="soc"><a href="https://github.com/radhshahmat91" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg></a><a href="https://www.linkedin.com/in/radh-shahmat-5b5420439" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a></div><a class="btn sm mag" href="Radh_Shahmat_Resume.pdf?v=2" download="Radh_Shahmat_Resume.pdf">
+    Download CV
+</a></div>
+  <button id="burger" aria-label="Menu"><span></span><span></span></button>
+</header>
+
+<main id="top">
+<section class="hero" id="home">
+  <div>
+    <p class="tag rv"><span class="dot"></span>Open to opportunities in Dhaka, Bangladesh</p>
+    <h1 data-split>I build for the web and study how people talk online.</h1>
+    <p class="role rv" style="--d:2">I'm Radh Shahmat, a <b id="role"></b><span class="cur"></span></p>
+    <div class="row rv" style="--d:3">
+      <a class="btn pri mag" href="#work">View projects</a>
+      <a class="btn sm mag" href="Radh_Shahmat_Resume.pdf?v=2" download="Radh_Shahmat_Resume.pdf">
+    Download CV
+</a>
+      <a class="btn mag" href="https://github.com/radhshahmat91" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn mag" href="https://www.linkedin.com/in/radh-shahmat-5b5420439" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <div class="stats rv" style="--d:4">
+      <div><b data-n="4">0</b><span>Featured builds</span></div>
+      <div><b data-n="1">0</b><span>Research project</span></div>
+      <div><b data-n="3">0</b><span>Languages analysed</span></div>
+    </div>
+  </div>
+  <div class="ph rv" style="--d:2">
+    <img src="assets/profile.jpg" alt="Radh Shahmat">
+    <span class="fl a">React</span><span class="fl b">Node.js</span><span class="fl c">NLP</span>
+  </div>
+</section>
+
+<div class="mq"><div>Full-Stack Development &nbsp;✦&nbsp; React &nbsp;✦&nbsp; Next.js &nbsp;✦&nbsp; Node.js &nbsp;✦&nbsp; MongoDB &nbsp;✦&nbsp; NLP Research &nbsp;✦&nbsp; Python &nbsp;✦&nbsp; UI Design &nbsp;✦&nbsp; Full-Stack Development &nbsp;✦&nbsp; React &nbsp;✦&nbsp; Next.js &nbsp;✦&nbsp; Node.js &nbsp;✦&nbsp; MongoDB &nbsp;✦&nbsp; NLP Research &nbsp;✦&nbsp; Python &nbsp;✦&nbsp; UI Design &nbsp;✦&nbsp;</div></div>
+
+<section id="about">
+  <h2 data-split>Curiosity in. Craft out.</h2>
+  <div class="two">
+    <div class="rv">
+      <p>I'm a Computer Science &amp; Engineering student at United International University who enjoys the space where design, engineering and problem-solving meet.</p>
+      <p>I build web applications with modern frontend and backend tools and care about the details users actually feel. My work ranges from university platforms and restaurant systems to car-rental and job-marketplace apps.</p>
+      <p>I'm also drawn to NLP and applied machine learning. My undergraduate research studies gender bias in Bangladeshi YouTube comments.</p>
+    </div>
+    <div class="tl rv" style="--d:2">
+      <div><i></i><b>B.Sc. in Computer Science &amp; Engineering</b><span>United International University</span></div>
+      <div><i></i><b>HSC, 2018</b><span>Govt. Science College</span></div>
+      <div><i></i><b>SSC, 2016</b><span>Ideal School &amp; College, Motijheel</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="np-projects np-root" id="work">
+  <div class="np-wrap np-projects__head">
+    <h2 class="np-sec-title" data-np-split="chars"><span class="np-ln"><span class="np-ln__in">Projects</span></span></h2>
+    <p class="np-sec-sub" data-np-reveal>Four full-stack products, from campus life to car rentals. Each one has its own short film: tap a poster to watch.</p>
+  </div>
+
+  <div class="np-scenes">
+
+    <!-- 1 · AcademiaConnect -->
+    <article class="np-scene" data-np-scene data-key="academiaconnect" style="--tint:#c0563a; --tint2:#6f8f5c">
+      <div class="np-scene__bg" aria-hidden="true"></div>
+      <div class="np-wrap np-scene__grid">
+        <div class="np-scene__copy">
+          <div class="np-scene__num" aria-hidden="true">01</div>
+          <h3 class="np-scene__title" aria-label="AcademiaConnect" data-np-split="chars">
+            <span class="np-ln" aria-hidden="true"><span class="np-ln__in">Academia</span></span>
+            <span class="np-ln" aria-hidden="true"><span class="np-ln__in">Connect</span></span>
+          </h3>
+          <p class="np-scene__cat">University platform</p>
+          <p class="np-scene__tagline">One home for everything a university student does: learn, join, pay and talk.</p>
+          <p class="np-scene__desc">A full-stack university platform. Students follow courses with video lectures and notes, register for the next semester, pay tuition and bus fees, evaluate their courses, join clubs and events, and chat in real time. An admin panel runs everything behind the scenes.</p>
+          <div class="np-stack">
+            <div class="np-stack__row"><span class="np-stack__label">Client</span>
+              <ul class="np-chips"><li>Next.js 16</li><li>React 19</li><li>TypeScript</li><li>Tailwind CSS 4</li><li>DaisyUI 5</li><li>Framer Motion</li><li>BetterAuth</li><li>TanStack Query</li><li>Socket.io</li><li>Recharts</li></ul></div>
+            <div class="np-stack__row"><span class="np-stack__label">Server</span>
+              <ul class="np-chips"><li>Node.js</li><li>Express 5</li><li>TypeScript</li><li>MongoDB</li><li>Mongoose</li><li>Socket.io</li><li>Zod</li><li>JWT (jose)</li></ul></div>
+          </div>
+          <div class="np-scene__actions">
+            <a class="np-btn np-btn--primary" href="https://academia-client.vercel.app/" target="_blank" rel="noopener"><svg class="np-ic"><use href="#i-globe"/></svg><span>Live site</span></a>
+            <button class="np-btn np-btn--ghost" type="button" data-np-film="academiaconnect"><svg class="np-ic np-ic--fill"><use href="#i-play"/></svg><span>Watch film</span></button>
+            <a class="np-textlink" href="https://github.com/radhshahmat91/academia-client" target="_blank" rel="noopener"><svg class="np-ic np-ic--fill"><use href="#i-github"/></svg>Client code</a>
+            <a class="np-textlink" href="https://github.com/radhshahmat91/academia-server" target="_blank" rel="noopener"><svg class="np-ic np-ic--fill"><use href="#i-github"/></svg>Server code</a>
+          </div>
+        </div>
+
+        <div class="np-scene__stage">
+          <div class="np-poster" data-np-poster data-np-film="academiaconnect" role="button" tabindex="0" aria-label="Play the AcademiaConnect film">
+            <div class="np-poster__frame">
+              <img class="np-poster__img" src="assets/img/academiaconnect.jpg" width="1500" height="1640" alt="Three students walking across a brick-paved university campus" loading="lazy">
+              <video class="np-poster__video" muted loop playsinline preload="none" data-src="assets/video/academiaconnect.mp4"></video>
+              <div class="np-poster__tiles" aria-hidden="true"></div>
+              <span class="np-poster__play" aria-hidden="true"><svg class="np-ic np-ic--fill"><use href="#i-play"/></svg></span>
+            </div>
+            <div class="np-plate np-plate--p1" data-np-depth="34"><i class="np-plate__dot"></i>Real-time messaging</div>
+            <div class="np-plate np-plate--p2" data-np-depth="62"><i class="np-plate__dot"></i>Semester registration</div>
+            <div class="np-plate np-plate--p3" data-np-depth="22"><i class="np-plate__dot"></i>Tuition &amp; bus-pass payments</div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 2 · Vroomly -->
+    <article class="np-scene np-scene--flip" data-np-scene data-key="vroomly" style="--tint:#d9283f; --tint2:#8fa6c4">
+      <div class="np-scene__bg" aria-hidden="true"></div>
+      <div class="np-wrap np-scene__grid">
+        <div class="np-scene__copy">
+          <div class="np-scene__num" aria-hidden="true">02</div>
+          <h3 class="np-scene__title" aria-label="Vroomly" data-np-split="chars">
+            <span class="np-ln" aria-hidden="true"><span class="np-ln__in">Vroomly</span></span>
+          </h3>
+          <p class="np-scene__cat">Car-rental marketplace</p>
+          <p class="np-scene__tagline">A peer-to-peer car rental marketplace.</p>
+          <p class="np-scene__desc">Renters search, book and pay for cars from local hosts; hosts list vehicles and manage requests and earnings; admins moderate the whole platform. Availability calendars, Stripe payments, reviews and live notifications keep every trip moving.</p>
+          <div class="np-stack">
+            <div class="np-stack__row"><span class="np-stack__label">Client</span>
+              <ul class="np-chips"><li>Next.js 16</li><li>React 19</li><li>TypeScript</li><li>Tailwind CSS 4</li><li>DaisyUI 5</li><li>Motion</li><li>BetterAuth</li><li>TanStack Query</li><li>Stripe</li><li>Socket.IO</li><li>Recharts</li></ul></div>
+            <div class="np-stack__row"><span class="np-stack__label">Server</span>
+              <ul class="np-chips"><li>Node.js</li><li>Express 5</li><li>MongoDB</li><li>Mongoose</li><li>Socket.IO</li><li>Stripe</li><li>Cloudinary</li><li>JWT (jose)</li><li>Zod</li></ul></div>
+          </div>
+          <div class="np-scene__actions">
+            <a class="np-btn np-btn--primary" href="https://vroomly-client.vercel.app" target="_blank" rel="noopener"><svg class="np-ic"><use href="#i-globe"/></svg><span>Live site</span></a>
+            <button class="np-btn np-btn--ghost" type="button" data-np-film="vroomly"><svg class="np-ic np-ic--fill"><use href="#i-play"/></svg><span>Watch film</span></button>
+            <a class="np-textlink" href="https://github.com/radhshahmat91/vroomly-client" target="_blank" rel="noopener"><svg class="np-ic np-ic--fill"><use href="#i-github"/></svg>Client code</a>
+            <a class="np-textlink" href="https://github.com/radhshahmat91/vroomly-server" target="_blank" rel="noopener"><svg class="np-ic np-ic--fill"><use href="#i-github"/></svg>Server code</a>
+          </div>
+        </div>
+
+        <div class="np-scene__stage">
+          <div class="np-poster" data-np-poster data-np-film="vroomly" role="button" tabindex="0" aria-label="Play the Vroomly film">
+            <div class="np-poster__frame">
+              <img class="np-poster__img" src="assets/img/vroomly.jpg" width="1200" height="1800" alt="A row of classic American muscle cars parked in the evening light" loading="lazy">
+              <video class="np-poster__video" muted loop playsinline preload="none" data-src="assets/video/vroomly.mp4"></video>
+              <div class="np-poster__tiles" aria-hidden="true"></div>
+              <span class="np-poster__play" aria-hidden="true"><svg class="np-ic np-ic--fill"><use href="#i-play"/></svg></span>
+            </div>
+            <div class="np-plate np-plate--p1" data-np-depth="34"><i class="np-plate__dot"></i>Smart search &amp; filters</div>
+            <div class="np-plate np-plate--p2" data-np-depth="62"><i class="np-plate__dot"></i>Stripe payments</div>
+            <div class="np-plate np-plate--p3" data-np-depth="22"><i class="np-plate__dot"></i>Host earnings dashboard</div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 3 · Elan -->
+    <article class="np-scene" data-np-scene data-key="elan" style="--tint:#2f8f86; --tint2:#c58b4a">
+      <div class="np-scene__bg" aria-hidden="true"></div>
+      <div class="np-wrap np-scene__grid">
+        <div class="np-scene__copy">
+          <div class="np-scene__num" aria-hidden="true">03</div>
+          <h3 class="np-scene__title" aria-label="Élan" data-np-split="chars">
+            <span class="np-ln" aria-hidden="true"><span class="np-ln__in">Élan</span></span>
+          </h3>
+          <p class="np-scene__cat">Restaurant platform</p>
+          <p class="np-scene__tagline">A candle-lit restaurant, online.</p>
+          <p class="np-scene__desc">ÉLAN is a candle-lit restaurant: a site made to linger on, with online ordering, live order tracking and table reservations for guests, and kitchen, delivery and admin screens for the team behind it.</p>
+          <div class="np-stack">
+            <div class="np-stack__row"><span class="np-stack__label">Client</span>
+              <ul class="np-chips"><li>Next.js 15</li><li>React 19</li><li>TypeScript</li><li>Tailwind CSS 4</li><li>Framer Motion</li><li>Lenis</li><li>Socket.IO</li><li>Zod</li></ul></div>
+            <div class="np-stack__row"><span class="np-stack__label">Server</span>
+              <ul class="np-chips"><li>Node.js</li><li>Express 5</li><li>MongoDB</li><li>Mongoose</li><li>Socket.IO</li><li>Zod</li><li>Cloudinary</li><li>PDFKit</li></ul></div>
+          </div>
+          <div class="np-scene__actions">
+            <a class="np-btn np-btn--primary" href="https://elan-client.vercel.app" target="_blank" rel="noopener"><svg class="np-ic"><use href="#i-globe"/></svg><span>Live site</span></a>
+            <button class="np-btn np-btn--ghost" type="button" data-np-film="elan"><svg class="np-ic np-ic--fill"><use href="#i-play"/></svg><span>Watch film</span></button>
+            <a class="np-textlink" href="https://github.com/radhshahmat91/elan-client" target="_blank" rel="noopener"><svg class="np-ic np-ic--fill"><use href="#i-github"/></svg>Client code</a>
+            <a class="np-textlink" href="https://github.com/radhshahmat91/elan-server" target="_blank" rel="noopener"><svg class="np-ic np-ic--fill"><use href="#i-github"/></svg>Server code</a>
+          </div>
+        </div>
+
+        <div class="np-scene__stage">
+          <div class="np-poster" data-np-poster data-np-film="elan" role="button" tabindex="0" aria-label="Play the Élan film">
+            <div class="np-poster__frame">
+              <img class="np-poster__img" src="assets/img/elan.jpg" width="1200" height="1800" alt="The warmly lit, wood-panelled dining room of a restaurant with leather booths" loading="lazy">
+              <video class="np-poster__video" muted loop playsinline preload="none" data-src="assets/video/elan.mp4"></video>
+              <div class="np-poster__tiles" aria-hidden="true"></div>
+              <span class="np-poster__play" aria-hidden="true"><svg class="np-ic np-ic--fill"><use href="#i-play"/></svg></span>
+            </div>
+            <div class="np-plate np-plate--p1" data-np-depth="34"><i class="np-plate__dot"></i>Live order tracking</div>
+            <div class="np-plate np-plate--p2" data-np-depth="62"><i class="np-plate__dot"></i>Table reservations &amp; QR</div>
+            <div class="np-plate np-plate--p3" data-np-depth="22"><i class="np-plate__dot"></i>Kitchen &amp; delivery boards</div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 4 · BookNook -->
+    <article class="np-scene np-scene--flip" data-np-scene data-key="booknook" style="--tint:#d99a43; --tint2:#b85a3a">
+      <div class="np-scene__bg" aria-hidden="true"></div>
+      <div class="np-wrap np-scene__grid">
+        <div class="np-scene__copy">
+          <div class="np-scene__num" aria-hidden="true">04</div>
+          <h3 class="np-scene__title" aria-label="BookNook" data-np-split="chars">
+            <span class="np-ln" aria-hidden="true"><span class="np-ln__in">Book</span></span>
+            <span class="np-ln" aria-hidden="true"><span class="np-ln__in">Nook</span></span>
+          </h3>
+          <p class="np-scene__cat">Online library</p>
+          <p class="np-scene__tagline">A small online library. Add a book, borrow a book, return a book.</p>
+          <p class="np-scene__desc">BookNook is a small library that runs in the browser: add books with cover uploads, borrow them with real stock tracking, and return them when you’re done. Sign-in, private routes and a JWT-protected API sit beneath a calm, animated interface.</p>
+          <div class="np-stack">
+            <div class="np-stack__row"><span class="np-stack__label">Client</span>
+              <ul class="np-chips"><li>Next.js 16</li><li>React 19</li><li>TypeScript</li><li>Tailwind CSS 4</li><li>daisyUI 5</li><li>Framer Motion</li><li>Swiper</li><li>BetterAuth</li><li>Sonner</li></ul></div>
+            <div class="np-stack__row"><span class="np-stack__label">Server</span>
+              <ul class="np-chips"><li>Node.js</li><li>Express 5</li><li>MongoDB</li><li>JWT</li></ul></div>
+          </div>
+          <div class="np-scene__actions">
+            <a class="np-btn np-btn--primary" href="https://booknook-client-murex.vercel.app" target="_blank" rel="noopener"><svg class="np-ic"><use href="#i-globe"/></svg><span>Live site</span></a>
+            <button class="np-btn np-btn--ghost" type="button" data-np-film="booknook"><svg class="np-ic np-ic--fill"><use href="#i-play"/></svg><span>Watch film</span></button>
+            <a class="np-textlink" href="https://github.com/radhshahmat91/booknook-client" target="_blank" rel="noopener"><svg class="np-ic np-ic--fill"><use href="#i-github"/></svg>Client code</a>
+            <a class="np-textlink" href="https://github.com/radhshahmat91/booknook-server" target="_blank" rel="noopener"><svg class="np-ic np-ic--fill"><use href="#i-github"/></svg>Server code</a>
+          </div>
+        </div>
+
+        <div class="np-scene__stage">
+          <div class="np-poster" data-np-poster data-np-film="booknook" role="button" tabindex="0" aria-label="Play the BookNook film">
+            <div class="np-poster__frame">
+              <img class="np-poster__img" src="assets/img/booknook.jpg" width="1200" height="1800" alt="Warmly lit wooden bookshelves packed with books" loading="lazy">
+              <video class="np-poster__video" muted loop playsinline preload="none" data-src="assets/video/booknook.mp4"></video>
+              <div class="np-poster__tiles" aria-hidden="true"></div>
+              <span class="np-poster__play" aria-hidden="true"><svg class="np-ic np-ic--fill"><use href="#i-play"/></svg></span>
+            </div>
+            <div class="np-plate np-plate--p1" data-np-depth="34"><i class="np-plate__dot"></i>Borrow with live stock</div>
+            <div class="np-plate np-plate--p2" data-np-depth="62"><i class="np-plate__dot"></i>Full book CRUD</div>
+            <div class="np-plate np-plate--p3" data-np-depth="22"><i class="np-plate__dot"></i>Email &amp; Google sign-in</div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section id="research">
+  <p class="eyebrow rv">Research</p>
+  <h2 class="rv" style="--d:1">Undergraduate <span class="grad">Research</span></h2>
+  <div class="rs">
+    <div class="rc glass rv">
+      <h3>Unveiling Gender Bias in Social Media Comments: An NLP Analysis on Bangladeshi Influencers</h3>
+      <p>An NLP-based research project that analyses gender bias, toxicity, abusive language and sentiment in YouTube comments aimed at Bangladeshi male and female influencers. It covers Bangla, English and Banglish (code-mixed) comments across five creator categories: Educational, Comedy, Food Vlogging, Lifestyle and Fitness.</p>
+      <p>I collected and preprocessed the comment data, annotated it and validated the ground truth, then applied machine learning and NLP techniques to classify sentiment and toxic comments. The study compares the nature and severity of negative comments directed at male and female influencers, including abusive, mocking, sarcastic and harassing content.</p>
+      <h4>Core skills</h4><div class="tags" id="ck" style="--a:#3ee6ff"></div>
+    </div>
+    <div class="orb glass rv" style="--d:2"><s></s><s></s><div class="nuc">Bangla<br>English<br>Banglish</div>
+      <span style="left:8%;top:10%">Educational</span><span style="right:7%;top:17%;--dl:-2s">Comedy</span><span style="left:4%;top:55%;--dl:-4s">Food Vlogging</span><span style="right:8%;top:64%;--dl:-1s">Lifestyle</span><span style="left:36%;bottom:6%;--dl:-5s">Fitness</span>
+      <span class="s" style="left:34%;top:4%;--dl:-3s">Toxicity</span><span class="s" style="left:6%;top:33%;--dl:-6s">Sentiment</span><span class="s" style="right:5%;top:40%;--dl:-2.5s">Sarcasm</span><span class="s" style="right:12%;bottom:13%;--dl:-4.5s">Harassment</span>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="sh"><div>
+    <p class="eyebrow rv">Skills</p>
+    <h2 class="rv" style="--d:1;font-size:clamp(1.6rem,3.4vw,2.4rem)">Engineering with precision, <span class="grad">designing with intent.</span></h2>
+    <p class="rv" style="--d:2;color:var(--m);max-width:440px">From responsive interfaces and resilient APIs to language models, these are the technologies I rely on to design, build and ship dependable software.</p>
+    <p class="rv" style="--d:3;color:var(--c);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase">Move your cursor over the sphere to explore</p>
+  </div><div id="cloud" class="rv" style="--d:2"></div></div>
+  <div class="skm" id="m1"><div></div></div><div class="skm r" id="m2"><div></div></div>
+  <div class="skg" id="skg"></div>
+</section>
+
+<section id="contact">
+  <div class="two">
+    <div class="rv">
+      <h2 data-split>Let's talk.</h2>
+      <p>Have a project, an internship or a research idea? Send a message and I'll reply soon.</p>
+      <div class="links">
+        <a class="btn mag" href="mailto:radhshahmat91@gmail.com">radhshahmat91@gmail.com</a>
+        <a class="btn mag" href="https://github.com/radhshahmat91" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn mag" href="https://www.linkedin.com/in/radh-shahmat-5b5420439" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn sm mag" href="Radh_Shahmat_Resume.pdf?v=2" download="Radh_Shahmat_Resume.pdf">
+    Download CV
+</a>
+      </div>
+    </div>
+   <form id="form" class="card rv" style="--d:2"
+      action="https://api.web3forms.com/submit"
+      method="POST">
+
+  <input type="hidden"
+         name="access_key"
+         value="0fafbd31-5a26-4eb5-9c90-25a0f3d89994">
+
+  <input type="hidden"
+         name="subject"
+         value="New message from Radh Shahmat's Portfolio">
+
+  <input type="hidden"
+         name="from_name"
+         value="Radh Shahmat Portfolio">
+
+  <input type="checkbox"
+         name="botcheck"
+         style="display:none">
+
+  <label>
+    Your name
+    <input name="name" required autocomplete="name">
+  </label>
+
+  <label>
+    Your email
+    <input name="email" type="email" required autocomplete="email">
+  </label>
+
+  <label>
+    Message
+    <textarea name="message" rows="5" required></textarea>
+  </label>
+
+  <button class="btn pri" type="submit">
+    Send message
+  </button>
+
+  <p id="st" role="status"></p>
+</form>
+  </div>
+</section>
+</main>
+
+<footer><span>© Radh Shahmat</span><a href="#top" class="mag">Back to top ↑</a></footer>
+<div class="np-film np-root" id="film" role="dialog" aria-modal="true" aria-label="Project film" hidden>
+  <div class="np-film__scrim" data-np-film-close></div>
+  <div class="np-film__panel">
+    <button class="np-film__close np-icon-btn np-icon-btn--lg" type="button" data-np-film-close aria-label="Close film"><svg class="np-ic"><use href="#i-close"/></svg></button>
+    <div class="np-film__player">
+      <video class="np-film__video" playsinline preload="metadata"></video>
+      <button class="np-film__big" type="button" aria-label="Play film"><svg class="np-ic np-ic--fill"><use href="#i-play"/></svg></button>
+      <div class="np-film__controls">
+        <button class="np-film__btn" type="button" data-np-act="toggle" aria-label="Play or pause"><svg class="np-ic np-ic--fill np-ic--play"><use href="#i-play"/></svg><svg class="np-ic np-ic--fill np-ic--pause"><use href="#i-pause"/></svg></button>
+        <input class="np-film__seek" type="range" min="0" max="1000" value="0" step="1" aria-label="Seek">
+        <span class="np-film__time">0:00 / 0:00</span>
+        <button class="np-film__btn" type="button" data-np-act="mute" aria-label="Mute or unmute"><svg class="np-ic np-ic--vol"><use href="#i-volume"/></svg><svg class="np-ic np-ic--mute"><use href="#i-mute"/></svg></button>
+        <button class="np-film__btn" type="button" data-np-act="full" aria-label="Fullscreen"><svg class="np-ic"><use href="#i-full"/></svg></button>
+      </div>
+    </div>
+    <div class="np-film__info">
+      <div class="np-film__meta">
+        <h3 class="np-film__title"></h3>
+        <p class="np-film__cat"></p>
+      </div>
+      <div class="np-film__links">
+        <a class="np-btn np-btn--primary" data-np-link="live" target="_blank" rel="noopener"><svg class="np-ic"><use href="#i-globe"/></svg><span>Live site</span></a>
+        <a class="np-textlink" data-np-link="client" target="_blank" rel="noopener"><svg class="np-ic np-ic--fill"><use href="#i-github"/></svg>Client code</a>
+        <a class="np-textlink" data-np-link="server" target="_blank" rel="noopener"><svg class="np-ic np-ic--fill"><use href="#i-github"/></svg>Server code</a>
+      </div>
+      <div class="np-film__nav">
+        <button class="np-icon-btn" type="button" data-np-film-step="-1" aria-label="Previous film"><svg class="np-ic"><use href="#i-prev"/></svg></button>
+        <button class="np-icon-btn" type="button" data-np-film-step="1" aria-label="Next film"><svg class="np-ic"><use href="#i-next"/></svg></button>
+      </div>
+    </div>
+  </div>
+</div>
+<noscript><style>.intro{display:none!important}</style></noscript>
+<script src="assets/js/intro.js"></script>
+<script src="js/main.js"></script>
+<script src="assets/js/projects.js"></script>
+<script>
+/* safety net: never leave a visitor stuck behind the intro */
+setTimeout(function () {
+  if (!window.__introDone && document.documentElement.classList.contains('has-intro')) {
+    var i = document.getElementById('intro'); if (i) i.style.display = 'none';
+    document.documentElement.classList.remove('intro-lock', 'has-intro');
+    document.body.classList.add('is-ready');
+  }
+}, 15000);
+</script>
+</body>
+</html>
